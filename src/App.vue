@@ -21,7 +21,17 @@
     <router-view />
   </div>
 </template>
-
+<script>
+export default {
+  metaInfo: {
+    title: "Lars Reich",
+    htmlAttrs: {
+      lang: "en",
+      amp: true
+    }
+  }
+};
+</script>
 <style>
 html,
 body {
