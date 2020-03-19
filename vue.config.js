@@ -1,5 +1,3 @@
 module.exports = {
-  pwa: {
-    themeColor: '#353535'
-  }
-}
+  transpileDependencies: ["vuetify"]
+};

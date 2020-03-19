@@ -1,4 +1,4 @@
-# lars
+# larsreich
 
 ## Project setup
 ```

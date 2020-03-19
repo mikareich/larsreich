@@ -1,5 +1,0 @@
-:title `Study XY`
-:titleImg: https://i1.rgstatic.net/publication/268452684_Using_mixed_methods_research_designs_in_health_psychology_An_illustrated_discussion_from_a_pragmatist_perspective/links/575eca1c08ae9a9c955f7ee7/largepreview.png
-:content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis excepturi perferendis 
-consectetur facere expedita, illum rem est quibusdam accusamus, 
-consequuntur beatae quo, deleniti praesentium officiis. Aspernatur animi ea iure rerum!`
