@@ -40,7 +40,11 @@
           <v-card-subtitle>{{ project.firstParagraph }}</v-card-subtitle>
 
           <v-card-actions>
-            <v-btn text>Read more</v-btn>
+            <v-btn
+              text
+              :to="{ name: 'ProjectView', params: { name: project.name } }"
+              >Read more</v-btn
+            >
           </v-card-actions>
         </v-card>
       </v-lazy>
@@ -48,37 +52,15 @@
   </div>
 </template>
 <script>
+import { mapState } from "vuex";
 export default {
   data() {
     return {
-      isActive: false,
-      projects: [
-        {
-          title: "Project xy",
-          firstParagraph: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                            praesentium illum quidem impedit. Reprehenderit eligendi, debitis
-                            suscipit laudantium accusamus mollitia, eveniet quis omnis ex, facilis
-                            ipsa porro alias quisquam quae!`,
-          firstImage: "/img/title.webp"
-        },
-        {
-          title: "Project xy",
-          firstParagraph: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                            praesentium illum quidem impedit. Reprehenderit eligendi, debitis
-                            suscipit laudantium accusamus mollitia, eveniet quis omnis ex, facilis
-                            ipsa porro alias quisquam quae!`,
-          firstImage: "/img/title.webp"
-        },
-        {
-          title: "Project xy",
-          firstParagraph: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                            praesentium illum quidem impedit. Reprehenderit eligendi, debitis
-                            suscipit laudantium accusamus mollitia, eveniet quis omnis ex, facilis
-                            ipsa porro alias quisquam quae!`,
-          firstImage: "/img/title.webp"
-        }
-      ]
+      isActive: false
     };
+  },
+  computed: {
+    ...mapState(["projects"])
   }
 };
 </script>
